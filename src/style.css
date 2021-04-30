@@ -28,11 +28,35 @@ li {
   line-height: 20px;
 }
 
-.weather-app {
+.weather-app-wrapper {
   max-width: 600px;
-  margin: 100px auto;
-  padding: 20px;
+  margin: 150px auto;
+}
+
+.weather-app {
+  padding: 30px;
   border: 1px solid blueviolet;
-  border-radius: 25px;
+  border-radius: 15px;
   background: white;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-temperature img {
+  height: 64px;
+  width: 64px;
+}
+
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.weather-temperature small {
+  position: relative;
+  font-size: 16px;
 }
