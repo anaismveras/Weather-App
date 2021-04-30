@@ -1,11 +1,27 @@
 body {
   font-family: "Source Code Pro", monospace;
+  background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/the-path-to-bosworth-field-john-edwards.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+h1 {
+  color: grey;
+  font-size: 24px;
+  font-weight: 100px;
+  line-height: 28px;
+}
+
+li {
+  list-style: none;
+  color: blue;
 }
 
 .weather-app {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 100px auto;
   padding: 20px;
   border: 1px solid blueviolet;
   border-radius: 25px;
+  background: white;
 }
