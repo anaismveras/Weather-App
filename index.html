@@ -20,6 +20,8 @@
     />
     <!--CSS Link-->
     <link rel="stylesheet" href="src/style.css" />
+    <!--Axios Link-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -27,10 +29,10 @@
         <div class="weather-app">
           <div class="overvirew">
             <h1>Weather Site</h1>
-            <h1>New York</h1>
+            <h1 id="currentCity"></h1>
             <ul>
               <li>Friday 05:00</li>
-              <li>Partly Cloudy</li>
+              <li id="weatherDescrption">Partly Cloudy</li>
             </ul>
           </div>
           <div class="row">
@@ -42,7 +44,7 @@
                   class="float-left"
                 />
                 <div class="float-left">
-                  <strong>12</strong><small>°C | °F</small>
+                  <strong id="currentTemp"></strong><small>°C | °F</small>
                 </div>
               </div>
             </div>
