@@ -1,5 +1,4 @@
 function formatDate(timestamp) {
-  //calculate the date
   let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours < 10) {
@@ -7,9 +6,8 @@ function formatDate(timestamp) {
   }
   let minutes = date.getMinutes();
   if (minutes < 10) {
-    hours = `0${minutes}`;
+    minutes = `0${minutes}`;
   }
-  let day = days[date.getDay()];
   let days = [
     "Sunday",
     "Monday",
@@ -19,6 +17,7 @@ function formatDate(timestamp) {
     "Friday",
     "Saturday",
   ];
+  let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
 
