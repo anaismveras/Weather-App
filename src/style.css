@@ -7,10 +7,11 @@ body {
 
 h1 {
   color: grey;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 100px;
   line-height: 28px;
   margin-bottom: 0;
+  text-align: center;
 }
 
 ul {
@@ -20,13 +21,21 @@ ul {
 
 li {
   list-style: none;
-  text-transform: capitalize;
   margin: 0;
   padding: 0;
   color: blue;
   font-size: 16px;
   font-weight: 100;
   line-height: 20px;
+}
+
+li::first-letter {
+  text-transform: capitalize;
+}
+
+.currentCityColor {
+  color: black;
+  text-align: left;
 }
 
 .weather-app-wrapper {

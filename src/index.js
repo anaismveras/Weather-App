@@ -1,3 +1,12 @@
+function formatDate(timestamp) {
+  //calculate the date
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let day = date.getDay();
+  return `${day} ${hours}:${minutes}`;
+}
+
 function displayTemp(response) {
   console.log(response.data);
   let currentTempElement = document.querySelector("#currentTemp");
@@ -15,6 +24,9 @@ function displayTemp(response) {
 
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = Math.round(response.data.wind.speed);
+
+  let dateElement = document.querySelector("#current-date-time");
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 let apiKey = "69b40f8beeff9db6adde6eb2258de3ef";
