@@ -1,3 +1,5 @@
+/*Date and Time*/
+
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -20,6 +22,8 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+
+/*Whole Application function to make sure everything connects*/
 
 function displayTemp(response) {
   console.log(response.data);
@@ -49,6 +53,8 @@ function displayTemp(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
+
+/*Search Engine*/
 
 function search(city) {
   let apiKey = "69b40f8beeff9db6adde6eb2258de3ef";
