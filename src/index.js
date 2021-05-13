@@ -82,6 +82,9 @@ form.addEventListener("submit", handleSubmit);
 function displayfahrenheitTemp(event) {
   event.preventDefault();
   let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  //remove active class from celsius Link
+  CelsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let currentTempElement = document.querySelector("#currentTemp");
   currentTempElement.innerHTML = Math.round(fahrenheitTemp);
 }
@@ -90,6 +93,14 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayfahrenheitTemp);
 
 /*Switching temp from F to C*/
+
+function displayCelsiusTemp(event) {
+  event.preventDefault();
+  CelsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let currentTempElement = document.querySelector("#currentTemp");
+  currentTempElement.innerHTML = Math.round(celsiusTemp);
+}
 
 let CelsiusLink = document.querySelector("#celsius-link");
 CelsiusLink.addEventListener("click", displayCelsiusTemp);
