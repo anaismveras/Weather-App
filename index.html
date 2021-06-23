@@ -23,6 +23,8 @@
     <!--Axios Link-->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
+
+  <!--Website-->
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
@@ -50,34 +52,31 @@
             </div>
           </form>
           <div class="overvirew">
-            <h1 class="currentCityColor" id="currentCity"></h1>
+            <h1 class="currentCityColor" id="currentCity">New York</h1>
             <ul>
-              <li>Last updated: <span id="current-date-time"></span></li>
-              <li id="weatherDescription"></li>
+              <li>
+                <span id="current-date-time">Last Updated: Tuesday 10:00</span>
+              </li>
+              <li id="weatherDescription">Cloudy</li>
             </ul>
           </div>
           <div class="row">
             <div class="col-6">
-              <div class="clearfix weather-temperature">
-                <img
-                  src=""
-                  id="weather-icon"
-                  alt="Partly Cloudy"
-                  class="float-left"
-                />
-                <div class="float-left">
-                  <strong id="currentTemp"></strong
-                  ><small>
-                    <a href="#" id="celsius-link" class="active">°C</a> |
-                    <a href="#" id="fahrenheit-link">°F</a>
-                  </small>
+              <div class="weather-temperature">
+                <div class="weather-image"> 
+                <img>☁️</img>
+                </div>
+                <div >
+                <strong>25</strong>
+                <a href="#" target="_blank"> °F </a>|
+                <a href="#" target="_blank"> °C </a>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Humidity : <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> mph</li>
+                <li>Humidity : <span id="humidity"></span> 45 %</li>
+                <li>Wind: <span id="wind"></span> 10 mph</li>
               </ul>
             </div>
           </div>
@@ -89,7 +88,5 @@
         </small>
       </div>
     </div>
-
-    <script src="src/index.js"></script>
   </body>
 </html>
